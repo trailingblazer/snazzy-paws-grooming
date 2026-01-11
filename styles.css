@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f9f9f9;
+    background: #f0f7f7; /* Light teal-tinted background */
     color: #333;
 }
 
 header {
-    background: #228B22; /* Forest green */
+    background: #00A0B0; /* Soft teal header */
     color: white;
     text-align: center;
     padding: 1em;
@@ -17,7 +17,7 @@ nav ul {
     padding: 0;
     margin: 0;
     background: #333;
-    display: none; /* Hidden by default on mobile */
+    display: none;
     flex-direction: column;
 }
 
@@ -68,7 +68,7 @@ th, td {
 }
 
 th {
-    background: #228B22;
+    background: #00A0B0; /* Teal table headers */
     color: white;
 }
 
@@ -85,7 +85,7 @@ figure {
 
 .cta {
     display: block;
-    background: #228B22;
+    background: #00A0B0; /* Teal buttons */
     color: white;
     padding: 0.8em;
     text-decoration: none;
@@ -106,7 +106,7 @@ input, textarea, button {
 }
 
 button {
-    background: #228B22;
+    background: #00A0B0; /* Teal submit buttons */
     color: white;
     border: none;
     cursor: pointer;
@@ -115,7 +115,7 @@ button {
 }
 
 button:hover {
-    background: #1a661a;
+    background: #00889a; /* Darker teal hover */
 }
 
 .required {
@@ -132,7 +132,7 @@ footer {
     width: 100%;
 }
 
-/* Desktop styles – switch to horizontal nav and 4-column gallery */
+/* Desktop */
 @media (min-width: 768px) {
     nav ul {
         display: flex !important;
@@ -150,7 +150,7 @@ footer {
     }
 }
 
-/* Larger/bolder text on mobile services table (your Assessment 1 version 2 improvement) */
+/* Mobile larger/bolder table text (your v2 improvement) */
 @media (max-width: 767px) {
     table th, td {
         font-size: 1.1em;
