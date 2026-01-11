@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Services</title>
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <header>
+        <h1>Snazzy Paws Grooming</h1>
+    </header>
+    <nav>
+        <div class="hamburger" aria-label="Toggle navigation" tabindex="0">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Our Grooming Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Bath and brush</td><td>$25–$50</td></tr>
+                <tr><td>Haircut</td><td>$45–$85</td></tr>
+                <tr><td>Nail trim</td><td>$10–$20</td></tr>
+                <tr><td>Ear cleaning</td><td>$10–$15</td></tr>
+                <tr><td>Teeth brushing</td><td>$10–$15</td></tr>
+                <tr><td>De-shedding treatment</td><td>$20–$40 (add-on)</td></tr>
+                <tr><td>Flea and tick treatment</td><td>$15–$30</td></tr>
+                <tr><td>Spa package</td><td>$75–$150</td></tr>
+                <tr><td>Express service</td><td>$15–$25 (add-on)</td></tr>
+                <tr><td>Medicated bath</td><td>$20–$40 (add-on)</td></tr>
+                <tr><td>Special-breed cuts</td><td>Quoted after consultation</td></tr>
+                <tr><td>Puppy package</td><td>$30–$60</td></tr>
+                <tr><td>Senior dog package</td><td>$40–$80</td></tr>
+                <tr><td>Full grooming package</td><td>$60–$120</td></tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Open Monday to Saturday, 9am to 5pm</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

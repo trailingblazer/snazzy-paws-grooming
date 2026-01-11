@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Booking</title>
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <header>
+        <h1>Snazzy Paws Grooming</h1>
+    </header>
+    <nav>
+        <div class="hamburger" aria-label="Toggle navigation" tabindex="0">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="owner-name">Owner's Name <span class="required">*</span></label>
+            <input type="text" id="owner-name" name="owner-name" aria-required="true" required>
+
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" aria-required="true" required>
+
+            <label for="dog-name">Dog's Name <span class="required">*</span></label>
+            <input type="text" id="dog-name" name="dog-name" aria-required="true" required>
+
+            <label for="breed">Breed <span class="required">*</span></label>
+            <input type="text" id="breed" name="breed" aria-required="true" required>
+
+            <label for="age">Dog's Age <span class="required">*</span></label>
+            <input type="number" id="age" name="age" aria-required="true" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Open Monday to Saturday, 9am to 5pm</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
