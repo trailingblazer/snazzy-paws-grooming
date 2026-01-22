@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grooming services and prices at Snazzy Paws Grooming – Baths, trims, full grooms for dogs in Auckland.">
     <title>Snazzy Paws Grooming - Services</title>
-    <link rel="stylesheet" href="styles.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Snazzy Paws Grooming</h1>
     </header>
-    <nav>
-        <<div class="hamburger" role="button" aria-label="Toggle navigation" tabindex="0">☰</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Snazzy Paws</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="roster/roster.html">Staff Roster</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h2>Our Grooming Services</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Bath and brush</td><td>$25–$50</td></tr>
-                <tr><td>Haircut</td><td>$45–$85</td></tr>
-                <tr><td>Nail trim</td><td>$10–$20</td></tr>
-                <tr><td>Ear cleaning</td><td>$10–$15</td></tr>
-                <tr><td>Teeth brushing</td><td>$10–$15</td></tr>
-                <tr><td>De-shedding treatment</td><td>$20–$40 (add-on)</td></tr>
-                <tr><td>Flea and tick treatment</td><td>$15–$30</td></tr>
-                <tr><td>Spa package</td><td>$75–$150</td></tr>
-                <tr><td>Express service</td><td>$15–$25 (add-on)</td></tr>
-                <tr><td>Medicated bath</td><td>$20–$40 (add-on)</td></tr>
-                <tr><td>Special-breed cuts</td><td>Quoted after consultation</td></tr>
-                <tr><td>Puppy package</td><td>$30–$60</td></tr>
-                <tr><td>Senior dog package</td><td>$40–$80</td></tr>
-                <tr><td>Full grooming package</td><td>$60–$120</td></tr>
-            </tbody>
-        </table>
+
+    <main class="container mt-4">
+        <section>
+            <h2>Our Grooming Services</h2>
+            <p>Professional care tailored to your dog's needs.</p>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price (NZD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Basic Bath & Brush</td><td>Shampoo, conditioner, brush out</td><td>$35</td></tr>
+                    <tr><td>Full Groom</td><td>Bath, haircut, nails, ears, glands</td><td>$65–$95</td></tr>
+                    <tr><td>Nail Trim Only</td><td>Quick clip and file</td><td>$15</td></tr>
+                    <tr><td>Teeth Cleaning</td><td>Gentle enzymatic clean</td><td>$25</td></tr>
+                </tbody>
+            </table>
+        </section>
     </main>
+
     <footer>
-        <p>Open Monday to Saturday, 9am to 5pm</p>
+        <p>© 2026 Snazzy Paws Grooming. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

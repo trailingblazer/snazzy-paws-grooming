@@ -3,50 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Snazzy Paws Grooming in Auckland – Map, form for inquiries and bookings.">
     <title>Snazzy Paws Grooming - Contact</title>
-    <link rel="stylesheet" href="styles.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Snazzy Paws Grooming</h1>
     </header>
-    <nav>
-        <div class="hamburger" role="button" aria-label="Toggle navigation" tabindex="0">☰</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Snazzy Paws</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="roster/roster.html">Staff Roster</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h2>Contact Us</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.292209266878!2d175.280917!3d-37.786992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d188f0b0b0b0b%3A0x500ef6143a2c670!2sHamilton%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1700000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of Snazzy Paws Grooming in Hamilton"></iframe>
-        <form>
-            <label for="name">Name <span class="required">*</span></label>
-            <input type="text" id="name" name="name" aria-required="true" required>
 
-            <label for="email">Email Address <span class="required">*</span></label>
-            <input type="email" id="email" name="email" aria-required="true" required>
+    <main class="container mt-4">
+        <section>
+            <h2>Contact Us</h2>
+            <p>We're in Auckland – get in touch!</p>
+            <!-- Replace with your real Google Maps embed code if you have one -->
+            <iframe class="mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.123!2d174.763!3d-36.848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDUwJzUzLjEiUyAxNzTCsDQ1JzQ2LjgiRQ!5e0!3m2!1sen!2snz!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-            <label for="phone">Phone Number <span class="required">*</span></label>
-            <input type="tel" id="phone" name="phone" aria-required="true" required>
-
-            <label for="comment">Comment <span class="required">*</span></label>
-            <textarea id="comment" name="comment" aria-required="true" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Comment / Inquiry</label>
+                    <textarea class="form-control" id="comment" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>Open Monday to Saturday, 9am to 5pm</p>
+        <p>© 2026 Snazzy Paws Grooming. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
