@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Staff roster and shift information for Snazzy Paws Grooming team (restricted access).">
+    <title>Snazzy Paws Grooming - Staff Roster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">  <!-- Note: ../ because it's one level deeper -->
+</head>
+<body>
+    <header>
+        <h1>Snazzy Paws Grooming</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Snazzy Paws</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../privacy.html">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="roster.html">Staff Roster</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section>
+            <h2>Staff Roster (Restricted)</h2>
+            <p>Internal schedule for grooming team. Access protected in production via .htaccess.</p>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Staff Name</th>
+                        <th>Shift</th>
+                        <th>Days</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Jane Doe</td><td>9:00 AM - 5:00 PM</td><td>Monday - Friday</td></tr>
+                    <tr><td>John Smith</td><td>10:00 AM - 6:00 PM</td><td>Tuesday - Saturday</td></tr>
+                    <tr><td>Emily Lee</td><td>8:00 AM - 4:00 PM</td><td>Wednesday - Sunday</td></tr>
+                    <tr><td>Mike Brown</td><td>Part-time</td><td>Weekends</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Snazzy Paws Grooming. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
